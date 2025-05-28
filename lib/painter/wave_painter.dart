@@ -29,19 +29,25 @@ class WavePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..shader = (gradient ?? LinearGradient(
-        colors: gradientColors,
-        begin: Alignment.bottomLeft,
-        end: Alignment.topRight,
-      )).createShader(Rect.fromLTWH(0, 0, size.width, size.height))
-      ..style = PaintingStyle.fill;
+    final paint =
+        Paint()
+          ..shader = (gradient ??
+                  LinearGradient(
+                    colors: gradientColors,
+                    begin: Alignment.bottomLeft,
+                    end: Alignment.topRight,
+                  ))
+              .createShader(Rect.fromLTWH(0, 0, size.width, size.height))
+          ..style = PaintingStyle.fill;
 
     final baseHeight = size.height * (1 - progress);
     final path = Path()..moveTo(0, baseHeight);
 
     for (double x = 0; x <= size.width; x++) {
-      final y = baseHeight + sin((x / size.width * 2 * pi) + (animationValue * 2 * pi)) * waveHeight;
+      final y =
+          baseHeight +
+          sin((x / size.width * 2 * pi) + (animationValue * 2 * pi)) *
+              waveHeight;
       path.lineTo(x, y);
     }
 
