@@ -6,7 +6,7 @@ issue_tracker: https://github.com/MuntasirAsif/wave_progress_indicator/issues
 documentation: https://github.com/MuntasirAsif/wave_progress_indicator#readme
 
 environment:
-  sdk: ^3.8.0
+  sdk: '>=3.7.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
