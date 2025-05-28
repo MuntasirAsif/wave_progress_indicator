@@ -2,8 +2,11 @@
 
 A customizable and animated wave progress indicator widget for Flutter. Perfect for visualizing progress with a fluid, liquid-like motion.
 
-![Wave Animation Demo](https://github.com/MuntasirAshif/wave_progress_indicator/raw/main/asset/preview-1.gif)
-![Wave Animation Demo](https://github.com/MuntasirAshif/wave_progress_indicator/raw/main/asset/preview-2.gif)
+<p align="center">
+  <img src="https://github.com/MuntasirAshif/wave_progress_indicator/raw/main/asset/preview-1.gif" width="48%"  alt=""/>
+  <img src="https://github.com/MuntasirAshif/wave_progress_indicator/raw/main/asset/preview-2.gif" width="48%"  alt=""/>
+</p>
+
 
 ## ✨ Features
 
